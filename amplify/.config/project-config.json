@@ -8,7 +8,7 @@
   "javascript": {
     "framework": "angular",
     "config": {
-      "SourceDir": "src/app/index.html",
+      "SourceDir": "src/index.html",
       "DistributionDir": "dist",
       "BuildCommand": "npm.cmd run-script build",
       "StartCommand": "ng serve"
