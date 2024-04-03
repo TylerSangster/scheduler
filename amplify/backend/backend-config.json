@@ -1,5 +1,19 @@
 {
   "api": {
+    "SchedulerAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "SchedulerLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
     "scheduler": {
       "dependsOn": [],
       "output": {
@@ -56,6 +70,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "SchedulerLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_SchedulerLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "SchedulerLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_SchedulerLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "SchedulerLambda"
+        }
+      ]
     }
   }
 }

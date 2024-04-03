@@ -14,6 +14,16 @@
     "categories": {
       "auth": {
         "scheduler": {}
+      },
+      "function": {
+        "SchedulerLambda": {
+          "deploymentBucketName": "amplify-scheduler-staging-11614-deployment",
+          "s3Key": "amplify-builds/SchedulerLambda-6f723672686238743749-build.zip"
+        }
+      },
+      "api": {
+        "scheduler": {},
+        "SchedulerAPI": {}
       }
     }
   }
