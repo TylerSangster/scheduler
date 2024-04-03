@@ -1,0 +1,12 @@
+type Product @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  productDescriptionEnglish: String!
+  productDescriptionFrench: String!
+  brandNameEnglish: String
+  brandNameFrench: String
+  productType: String
+  additionalProductIdentification: String
+  targetMarket: String
+  productImageUrl: String
+  status: String
+}
