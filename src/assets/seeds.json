@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "productDescriptionEnglish": "Chicken Noodle Soup English",
+        "productDescriptionFrench": "Chicken Noodle Soup French",
+        "brandNameEnglish": "Campbell Soup English",
+        "brandNameFrench": "Campbell Soup French",
+        "productType": "Pallet",
+        "additionalProductIdentification": "1234",
+        "targetMarket": "Canada",
+        "productImageUrl": "https://img.freepik.com/premium-photo/chicken-soup-with-noodles-vegetables-white-bowl-wooden-background_114420-3114.jpg?w=250",
+        "status": "Active"
+    },
+    {
+        "id": 2,
+        "productDescriptionEnglish": "hotdogs",
+        "productDescriptionFrench": "la hotdogs",
+        "brandNameEnglish": "hotdogs",
+        "brandNameFrench": "la hotdogs",
+        "productType": "Pallet",
+        "additionalProductIdentification": "2",
+        "targetMarket": "Canada",
+        "productImageUrl": "https://img.freepik.com/premium-photo/close-up-man-selling-delicious-hotdogs-bustling-streets-busy-city_174533-7982.jpg?w=250",
+        "status": "Active"
+    },
+    {
+        "id": 3,
+        "productDescriptionEnglish": "Ice Cream",
+        "productDescriptionFrench": "Ice Cream",
+        "brandNameEnglish": "Farmers",
+        "brandNameFrench": "Farmers",
+        "productType": "Consumer or Base",
+        "additionalProductIdentification": "3",
+        "targetMarket": "Canada",
+        "productImageUrl": "https://img.freepik.com/free-photo/coold-sweet-ice-cream-with-chocolate_144627-7297.jpg?t=st=1711587236~exp=1711590836~hmac=9279c88ddf0740dbd4525124bded1789b5e6b4f6d79632a0d6edbe0d228acdcb&w=250",
+        "status": "Active"
+    },
+    {
+        "id": 4,
+        "productDescriptionEnglish": "T-bone steak",
+        "productDescriptionFrench": "T-bone steak",
+        "brandNameEnglish": "T-bone steak",
+        "brandNameFrench": "T-bone steak",
+        "productType": "Pallet",
+        "additionalProductIdentification": "99",
+        "targetMarket": "Canada",
+        "productImageUrl": "https://img.freepik.com/free-photo/roasted-beef-cut-with-sauce-selection-1_140725-1843.jpg?t=st=1711588737~exp=1711592337~hmac=5b98567d8a15f06142c1ee81b2e5f3788dfb37cf16af04dc0dd90cc817bace93&w=250",
+        "status": "Active"
+    }
+]

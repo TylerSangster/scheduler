@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="form-group row"> <!--begin class=form-group -->
+      <form (ngSubmit)="onSearch(f)" #f="ngForm"> <!--begin <form>-->
+  
+      <div class="row">
+         <div class="col-12">
+          <h1>Search Products</h1>
+         </div>
+        <div class="col-12">
+          <input type="text" name="productId" placeholder="Product ID" class="form-control" [(ngModel)]="productId">
+          
+          <input type="text" name="productDescriptionEnglish" placeholder="Product Description" class="form-control" [(ngModel)]="productDescriptionEnglish">
+        </div>
+        <div class="col-12">
+          <br/>
+          <input  type="submit" id="submit" class="btn btn-success" name="submit" value="Search">
+        </div>
+      </div>
+      </form> <!--end <form>-->
+      </div> <!--end class=form-group -->
+  
+    <!-- Begin Result -->
+    <hr>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Description English</th>
+            <th scope="col">Description French</th>
+            <th scope="col">BrandName English</th>
+            <th scope="col">BrandName French</th>
+            <th scope="col">Type</th>
+            <th scope="col">Product ID</th>
+            <th scope="col">Target Market</th>
+            <th scope="col">Image Url</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let prod of products" id="{{prod.id}}" #tr>
+            <th scope="row">{{prod.id}}</th>
+            <td>{{prod.productDescriptionEnglish}}</td>
+            <td>{{prod.productDescriptionFrench}}</td>
+            <td>{{prod.brandNameEnglish}}</td>
+            <td>{{prod.brandNameFrench}}</td>
+            <td>{{prod.productType}}</td>
+            <td>{{prod.additionalProductIdentification}}</td>
+            <td>{{prod.targetMarket}}</td>
+            <td><img src="{{prod.productImageUrl}}"></td>
+            <td>{{prod.status}}</td>
+  
+          </tr>
+        </tbody>
+    </table>
+    <h5 *ngIf="products?.length === 0">No records available</h5>
+  </div>
+  
